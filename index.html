@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLTCON // Mission-Critical Commercial & Industrial Electrical Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            150: '#fef3c7',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            950: '#451a03',
+                        },
+                        slate900: '#0b0f19',
+                        slate950: '#070a12'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f19; color: #f8fafc; }
+        .font-mono-tech { font-family: 'IBM Plex Mono', monospace; }
+        .blueprint-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px); }
+    </style>
+</head>
+<body class="blueprint-grid min-h-screen selection:bg-brand-500 selection:text-slate950">
+
+    <!-- Top Utility & Compliance Bar -->
+    <div class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50 text-xs font-mono-tech">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center justify-between">
+            <div class="flex items-center space-x-6">
+                <span class="flex items-center text-emerald-400">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse mr-2"></span>
+                    DISPATCH: MIDDLESEX COUNTY ACTIVE
+                </span>
+                <span class="hidden md:inline text-slate-400">NJ MASTER ELEC #9674 // BONDED & COI-READY < 2HRS</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-brand-500 font-semibold">24/7 INDUSTRIAL SLA</span>
+                <a href="tel:7325550199" class="text-white hover:text-brand-500 font-bold transition">732-555-0199</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md sticky top-10 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-brand-500 rounded flex items-center justify-center font-black text-slate-950 text-xl">V</div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-white">VOLTCON</span>
+                    <span class="block text-[10px] font-mono-tech text-brand-500 tracking-widest uppercase">INDUSTRIAL & DATA CENTER POWER</span>
+                </div>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#capabilities" class="hover:text-white transition">Capabilities</a>
+                <a href="#datacenters" class="hover:text-brand-500 transition text-brand-400 font-semibold">Data Center / Mission Critical</a>
+                <a href="#compliance" class="hover:text-white transition">Engineering & COI</a>
+                <a href="#rfq" class="hover:text-white transition">Scope Estimator</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#rfq" class="bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold text-xs uppercase tracking-wider px-5 py-3 rounded transition shadow-lg shadow-brand-500/25">
+                    Request Scope / Bid
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div inline-flex class="inline-flex items-center space-x-2 bg-slate-800/80 border border-slate-700 rounded-full px-3.5 py-1 mb-6 text-xs font-mono-tech text-slate-300">
+                    <span class="text-brand-500">CLASS I / II / III READY</span>
+                    <span>•</span>
+                    <span>Central NJ Corridor & NYC Metro Edge</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.08] mb-6">
+                    Zero-Downtime Power for <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-amber-500">Industrial & Mission-Critical</span> Facilities.
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-400 font-normal leading-relaxed mb-10">
+                    NJ Master-Licensed (`#9674`) heavy electrical infrastructure. From 480V 3-phase plant distribution and VFD motor sync to modular data center UPS busways and generator synchronization.
+                </p>
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#rfq" class="bg-brand-500 hover:bg-brand-600 text-slate-950 font-extrabold px-8 py-4 rounded text-center transition tracking-wide text-sm">
+                        INITIALIZE PROJECT SCOPE RFQ
+                    </a>
+                    <a href="#datacenters" class="border border-slate-700 hover:border-slate-500 bg-slate-900/50 text-white font-semibold px-8 py-4 rounded text-center transition text-sm">
+                        Explore Data Center Readiness →
+                    </a>
+                </div>
+
+                <!-- Live Metrics Strip -->
+                <div class="grid grid-cols-3 gap-6 mt-16 pt-10 border-t border-slate-800/80 font-mono-tech text-xs">
+                    <div>
+                        <span class="block text-2xl font-bold text-white">480V / 13.8kV</span>
+                        <span class="text-slate-400">Distribution Tier</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-bold text-white">< 45 MIN</span>
+                        <span class="text-slate-400">Emergency SLA Dispatch</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-bold text-emerald-400">COI IN 2 HRS</span>
+                        <span class="text-slate-400">Risk & Insurance Clearance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Commercial & Industrial Pillars -->
+    <section id="capabilities" class="py-24 border-t border-slate-800 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <span class="text-xs font-mono-tech text-brand-500 uppercase tracking-widest block mb-2">Technical Matrix</span>
+                <h2 class="text-3xl font-extrabold tracking-tight text-white">Heavy Commercial & Industrial Engineering Scope</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-lg hover:border-slate-700 transition">
+                    <span class="font-mono-tech text-xs text-brand-500 mb-4 block">SCOPE 01 // POWER</span>
+                    <h3 class="text-xl font-bold text-white mb-3">3-Phase Distribution & Switchgear</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Main service panels, dry-type transformer installations, switchgear maintenance, thermal imaging diagnostics, and load balancing for high-draw manufacturing and commercial hubs.
+                    </p>
+                    <ul class="space-y-2 text-xs font-mono-tech text-slate-300">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span> 120/208V & 277/480V Systems</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span> Infrared Thermal Auditing</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span> Arc-Flash Study Coordination</li>
+                    </ul>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-lg hover:border-slate-700 transition">
+                    <span class="font-mono-tech text-xs text-brand-500 mb-4 block">SCOPE 02 // MOTION & CONTROL</span>
+                    <h3 class="text-xl font-bold text-white mb-3">VFDs, Motor Controls & PLC Riser</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Variable frequency drive retrofits, custom control panel fabrication, conveyor/pump power orchestration, and minimal-downtime cutovers for production lines.
+                    </p>
+                    <ul class="space-y-2 text-xs font-mono-tech text-slate-300">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span> ABB/Schneider VFD Commissioning</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span> Harmonic Mitigation Filtering</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span> Planned Night-Shift Cutover</li>
+                    </ul>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-lg hover:border-slate-700 transition">
+                    <span class="font-mono-tech text-xs text-brand-500 mb-4 block">SCOPE 03 // RESILIENCY</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Standby Gen-Sets & Transfer Sync</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Commercial/industrial diesel generator integration, automatic transfer switches (ATS), paralleling switchgear, and load-bank certification testing.
+                    </p>
+                    <ul class="space-y-2 text-xs font-mono-tech text-slate-300">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span> Generac Industrial / Cummins Tier</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span> NFPA 110 Compliance Testing</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span> Redundant Feed Failover</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Data Center Expansion Section -->
+    <section id="datacenters" class="py-24 border-t border-slate-800 bg-gradient-to-b from-slate-950 to-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="inline-block bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-mono-tech px-3 py-1 rounded mb-4">
+                        FUTURE-STATE ROADMAP // TIER III / IV EDGE
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+                        Mission-Critical & Edge Data Center Balance-of-Plant.
+                    </h2>
+                    <p class="text-slate-400 text-base leading-relaxed mb-8">
+                        As regional enterprise workloads shift to central New Jersey corridors, infrastructure demands zero-tolerance fault isolation, clean UPS harmonic performance, modular power distribution units (RPP/PDU ties), and high-density cooling electrical feeds.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 font-mono-tech text-xs border-t border-slate-800 pt-8">
+                        <div>
+                            <span class="text-white font-bold block text-sm">UPS / Battery Busway</span>
+                            <span class="text-slate-400">Static switch & DC string tie-ins</span>
+                        </div>
+                        <div>
+                            <span class="text-white font-bold block text-sm">Chiller Plant Power</span>
+                            <span class="text-slate-400">Redundant HVAC feeder lines</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-950 border border-slate-800 p-8 rounded-lg font-mono-tech text-xs">
+                    <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-800">
+                        <span class="text-slate-400">MISSION-CRITICAL READINESS PROFILE</span>
+                        <span class="text-emerald-400">AUDIT READY</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center bg-slate-900/60 p-3 rounded border border-slate-800">
+                            <span class="text-slate-300">NFPA 70E / Lockout-Tagout Protocol</span>
+                            <span class="text-emerald-400 font-bold">VERIFIED</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-slate-900/60 p-3 rounded border border-slate-800">
+                            <span class="text-slate-300">Dual-Feed Source Switching Audits</span>
+                            <span class="text-emerald-400 font-bold">ACTIVE</span>
+                        </div>
+                        <div class="flex justify-between items-center bg-slate-900/60 p-3 rounded border border-slate-800">
+                            <span class="text-slate-300">COI Tier-1 Enterprise Limit Alignment</span>
+                            <span class="text-emerald-400 font-bold">$10M+ READY</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 text-slate-500 text-[11px]">
+                        Engaging regional co-lo/enterprise general contractors for electrical subcontract scopes.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Scope / Bid Estimator App Block -->
+    <section id="rfq" class="py-24 border-t border-slate-800 bg-slate-950">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-xs font-mono-tech text-brand-500 uppercase tracking-widest block mb-2">Frictionless Intake</span>
+                <h2 class="text-3xl font-extrabold text-white">Commercial / Industrial Scope & COI Dispatch</h2>
+                <p class="text-slate-400 text-sm mt-2">Select your asset class. Same-day technical review & insurance packet generation.</p>
+            </div>
+            <div class="bg-slate-900/90 border border-slate-800 p-8 sm:p-10 rounded-lg">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-mono-tech text-slate-400 mb-2">FACILITY / ASSET CLASS</label>
+                            <select class="w-full bg-slate-950 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-500">
+                                <option>Commercial Office / Tenant Fit-Out (TI)</option>
+                                <option>Industrial Plant / Manufacturing Line (480V)</option>
+                                <option>Warehouse / High-Bay LED & Dock Distribution</option>
+                                <option>Mission-Critical / Edge Data Center Scope</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-mono-tech text-slate-400 mb-2">URGENCY / TIMELINE</label>
+                            <select class="w-full bg-slate-950 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-500">
+                                <option>24/7 Emergency Outage / Fault Dispatch</option>
+                                <option>Planned Cutover / Maintenance Window (< 14 Days)</option>
+                                <option>General Contractor Bid / Blueprint Pricing</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-xs font-mono-tech text-slate-400 mb-2">CONTACT NAME / ROLE</label>
+                            <input type="text" placeholder="Facility Mgr / GC Rep" class="w-full bg-slate-950 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-mono-tech text-slate-400 mb-2">DIRECT PHONE</label>
+                            <input type="tel" placeholder="732-555-0199" class="w-full bg-slate-950 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-mono-tech text-slate-400 mb-2">MUNICIPALITY / ZIP</label>
+                            <input type="text" placeholder="Spotswood / Middlesex" class="w-full bg-slate-950 border border-slate-800 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-500">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" onclick="alert('Scope inquiry transmitted to Voltcon Dispatch. COI & Engineering review initiated.')" class="w-full bg-brand-500 hover:bg-brand-600 text-slate-950 font-extrabold py-4 rounded text-sm tracking-wide uppercase transition shadow-lg shadow-brand-500/20">
+                            Transmit Scope & Request COI Packet
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-12 text-xs font-mono-tech text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between">
+            <div>VOLTCON ELECTRICAL INFRASTRUCTURE // NJ MASTER LIC #9674</div>
+            <div class="mt-4 sm:mt-0">SPJ / CENTRAL NJ CORRIDOR COMMERCIAL & INDUSTRIAL</div>
+        </div>
+    </footer>
+
+</body>
+</html>
