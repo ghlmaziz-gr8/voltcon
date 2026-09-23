@@ -117,6 +117,13 @@
             /* Optional: retain or swap the subtle grid overlay */
         }
 
+        .hero-image video.hero-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
         .content-divider-img {
             width: 100%;
             height: auto;
@@ -235,7 +242,12 @@
     <!-- Core Capabilities w/ Animated Bar Chart -->
     <section id="capabilities" class="py-24 border-t border-slate-800 bg-slate-950/50 reveal-on-scroll">
         <figure class="hero-image">
-            <img src="assets/images/telemetry-abstract.jpg" alt="Cinematic side profile in a dark control room with amber UI reflections and high-voltage substation telemetry background">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/images/telemetry-video.mp4" type="video/mp4">
+                <a href="assets/images/telemetry-abstract.jpg" target="_blank">
+                    <img src="assets/videos/telemetry-abstract.jpg" alt="Fallback representation" style="max-width: 100%; height: auto;">
+                </a>
+            </video>
             <!--<figcaption>Control room telemetry monitoring</figcaption>-->
         </figure>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
