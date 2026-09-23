@@ -92,10 +92,10 @@
         }
 
         .hero-image {
-        margin: 0;
-        overflow: hidden;
-        border-radius: 8px;
-        background-color: #0b0f19;
+            margin: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #0b0f19;
         }
 
         .hero-image img {
@@ -104,6 +104,17 @@
             display: block;
             object-fit: cover;
             filter: contrast(1.05) brightness(0.95);
+        }
+
+        .hero-section {
+            position: relative;
+            background-image: 
+                linear-gradient(rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.85)), 
+                url('telemetry-abstract_2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* Optional: retain or swap the subtle grid overlay */
         }
 
         .content-divider-img {
@@ -164,6 +175,22 @@
     <!-- Hero Section w/ Animated Graphic Element -->
     <section class="relative pt-20 pb-28 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+            <!-- RIGHT SIDE: Properly Scaled SVG Metric Graphic -->
+            <div class="mt-16 lg:mt-0 lg:ml-10 flex-shrink-0 relative animate-fade-in [animation-delay:200ms] flex justify-center">
+                <svg class="w-72 h-72 sm:w-96 sm:h-96" viewBox="0 0 200 200">
+                    <!-- Background Circle -->
+                    <circle cx="100" cy="100" r="78" fill="none" stroke="#1e293b" stroke-width="12"/>
+                    <!-- Animated Progress Circle (99.99% Uptime: circumference ~490, 99.99% is ~490) -->
+                    <circle cx="100" cy="100" r="78" fill="none" stroke="#f59e0b" stroke-width="12" 
+                            stroke-dasharray="490 490" stroke-linecap="round" 
+                            transform="rotate(-90 100 100)" class="animate-grow-height"/>
+                    <!-- Center Text Hierarchy -->
+                    <text x="100" y="85" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600" font-family="Inter" letter-spacing="1.5">FACILITY UPTIME</text>
+                    <text x="100" y="125" text-anchor="middle" fill="#f59e0b" font-size="34" font-weight="800" font-family="Inter" class="animate-pulse">99.99%</text>
+                    <text x="100" y="152" text-anchor="middle" fill="#64748b" font-size="10" font-family="IBM Plex Mono">ANNUALIZED SLA</text>
+                </svg>
+            </div>
+            
             <div class="max-w-3xl lg:max-w-xl animate-fade-in">
                 <div class="inline-flex items-center space-x-2 bg-slate-800 border border-slate-700 rounded-full px-3.5 py-1 mb-6 text-xs font-mono-tech text-slate-300">
                     <span class="text-brand-500">INDUSTRY & DATA CENTER SOLUTIONS</span>
@@ -181,21 +208,7 @@
                 </div>
             </div>
 
-            <!-- RIGHT SIDE: Properly Scaled SVG Metric Graphic -->
-            <div class="mt-16 lg:mt-0 lg:ml-10 flex-shrink-0 relative animate-fade-in [animation-delay:200ms] flex justify-center">
-                <svg class="w-72 h-72 sm:w-96 sm:h-96" viewBox="0 0 200 200">
-                    <!-- Background Circle -->
-                    <circle cx="100" cy="100" r="78" fill="none" stroke="#1e293b" stroke-width="12"/>
-                    <!-- Animated Progress Circle (99.99% Uptime: circumference ~490, 99.99% is ~490) -->
-                    <circle cx="100" cy="100" r="78" fill="none" stroke="#f59e0b" stroke-width="12" 
-                            stroke-dasharray="490 490" stroke-linecap="round" 
-                            transform="rotate(-90 100 100)" class="animate-grow-height"/>
-                    <!-- Center Text Hierarchy -->
-                    <text x="100" y="85" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600" font-family="Inter" letter-spacing="1.5">FACILITY UPTIME</text>
-                    <text x="100" y="125" text-anchor="middle" fill="#f59e0b" font-size="34" font-weight="800" font-family="Inter" class="animate-pulse">99.99%</text>
-                    <text x="100" y="152" text-anchor="middle" fill="#64748b" font-size="10" font-family="IBM Plex Mono">ANNUALIZED SLA</text>
-                </svg>
-            </div>
+            
         </div>
     </section>
 
