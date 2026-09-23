@@ -57,9 +57,22 @@
             transform: translateY(0);
         }
 
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+        .ticker-wrapper {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        }
+
+        .ticker-track {
+        display: inline-block;
+        padding-left: 100%;
+        animation: scroll-ticker 20s linear infinite;
+        }
+
+        @keyframes scroll-ticker {
+        0% { transform: translate3d(0, 0, 0); }
+        100% { transform: translate3d(-100%, 0, 0); }
         }
         .animate-marquee {
             display: flex;
@@ -77,6 +90,32 @@
             border-bottom: 1px solid #1e293b;
             background: #070a12;
         }
+
+        .hero-image {
+        margin: 0;
+        overflow: hidden;
+        border-radius: 8px;
+        background-color: #0b0f19;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            filter: contrast(1.05) brightness(0.95);
+        }
+
+        .content-divider-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            align-content: center;
+            filter: contrast(1.05) brightness(0.95);
+        }
+
+        
     </style>
 </head>
 <body class="blueprint-grid min-h-screen selection:bg-brand-500 selection:text-slate950">
@@ -182,6 +221,10 @@
 
     <!-- Core Capabilities w/ Animated Bar Chart -->
     <section id="capabilities" class="py-24 border-t border-slate-800 bg-slate-950/50 reveal-on-scroll">
+        <figure class="hero-image">
+            <img src="assets/images/telemetry-abstract.jpg" alt="Cinematic side profile in a dark control room with amber UI reflections and high-voltage substation telemetry background">
+            <!--<figcaption>Control room telemetry monitoring</figcaption>-->
+        </figure>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="mb-16 text-center max-w-2xl mx-auto">
                 <span class="text-xs font-mono-tech text-brand-500 uppercase tracking-widest block mb-2">Expertise</span>
@@ -382,6 +425,12 @@
             </div>
         </div>
     </section>
+    
+    <!-- After Initialize Project Scope & COI Request section -->
+    <figure class="hero-image">
+        <img src="assets/images/the-operator-calm.jpg" alt="Cinematic side profile in a dark control room with amber UI reflections and high-voltage substation telemetry background">
+        <!--<figcaption>Control room telemetry monitoring</figcaption>-->
+    </figure>
 
     <!-- Footer -->
     <footer class="border-t border-slate-800 bg-slate-950 py-12 text-xs font-mono-tech text-slate-500">
