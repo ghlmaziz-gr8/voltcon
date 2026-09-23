@@ -56,6 +56,27 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: max-content;
+            animation: marquee 25s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
+        .marquee-wrapper {
+            overflow: hidden;
+            display: flex;
+            width: 100%;
+            border-top: 1px solid #1e293b;
+            border-bottom: 1px solid #1e293b;
+            background: #070a12;
+        }
     </style>
 </head>
 <body class="blueprint-grid min-h-screen selection:bg-brand-500 selection:text-slate950">
@@ -138,6 +159,26 @@
             </div>
         </div>
     </section>
+
+    <!-- Live Telemetry / Compliance Looping Ticker -->
+    <div class="marquee-wrapper py-3 font-mono-tech text-xs tracking-wider select-none">
+        <div class="animate-marquee flex items-center space-x-12 px-6">
+            <!-- Loop Set 1 -->
+            <span class="flex items-center text-emerald-400 font-semibold">● 480V / 277V 3-PHASE ACTIVE</span>
+            <span class="text-slate-300">NJ MASTER #9674</span>
+            <span class="text-brand-500">NFPA 70E ARC-FLASH READY</span>
+            <span class="text-slate-300">OSHA 30 CERTIFIED FIELD CREWS</span>
+            <span class="text-slate-400">MIDDLESEX COUNTY DISPATCH: LIVE</span>
+            <span class="text-brand-400">TIER III+ PDU & BUSWAY SPECS</span>
+            <!-- Loop Set 2 (Seamless Infinite Repeat) -->
+            <span class="flex items-center text-emerald-400 font-semibold">● 480V / 277V 3-PHASE ACTIVE</span>
+            <span class="text-slate-300">NJ MASTER #9674</span>
+            <span class="text-brand-500">NFPA 70E ARC-FLASH READY</span>
+            <span class="text-slate-300">OSHA 30 CERTIFIED FIELD CREWS</span>
+            <span class="text-slate-400">MIDDLESEX COUNTY DISPATCH: LIVE</span>
+            <span class="text-brand-400">TIER III+ PDU & BUSWAY SPECS</span>
+        </div>
+    </div>
 
     <!-- Core Capabilities w/ Animated Bar Chart -->
     <section id="capabilities" class="py-24 border-t border-slate-800 bg-slate-950/50 reveal-on-scroll">
